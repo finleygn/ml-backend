@@ -54,13 +54,13 @@ impl QueryRoot {
     fn song(id: i32) -> FieldResult<Vec<Song>> {
         let artist = Artist {
             id: 1,
-            name: String::from("Moe Shop"),
+            name: String::from("test"),
         };
 
         Ok(vec![
             Song {
                 id,
-                name: String::from("Highlight"),
+                name: String::from("test2"),
                 artist,
             }
         ])
@@ -69,7 +69,7 @@ impl QueryRoot {
     fn artist(id: i32) -> FieldResult<Vec<Artist>> {
         let artist = Artist {
             id,
-            name: String::from("Moe Shop"),
+            name: String::from("test"),
         };
 
         Ok(vec![
